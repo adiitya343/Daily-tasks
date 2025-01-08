@@ -1,13 +1,13 @@
 # calculate sum and multiplication of two numbers
 
-x = int(input("First Number: "))# input from user for 1st no.
+number1 = int(input("First Number: "))# input from user for 1st no.
 
-y = int(input("Second Number: ")) # input from user for 2nd no.
+number2 = int(input("Second Number: ")) # input from user for 2nd no.
 
-sum = x + y #adding two numbers
+sum = number1 + number2 #adding two numbers
 
-multi = x * y #multiplying two numbers 
+multiplication = number1 * number2 #multiplying two numbers 
 
 print("Sum of two numbers = ", sum)
 
-print("Multiplication of two numbers = ", multi)
+print("Multiplication of two numbers = ", multiplication)
