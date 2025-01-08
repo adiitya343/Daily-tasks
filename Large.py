@@ -1,12 +1,12 @@
 # Declare Two variables and print that which is largest usinh ternaru operators
 
-a = int(input("Value of 'a' = ")) #input for first variable 
+number1 = int(input("Value of 'Number 1' = ")) #input for first variable 
 
-b = int(input("Value of 'b' = ")) #input for second variable
+number2 = int(input("Value of 'Number 2' = ")) #input for second variable
 
-mx = a if a>b else b # using ternary oprator
+max = number1 if number1>number2 else number2  # using ternary oprator
 
-print("'a' is ",a)
-print("'b' is ",b)
+print("'Number 1' is ",a)
+print("'Number 2' is ",b)
 
-print("Largest number is ",mx) # printing the largest number
+print("Largest number is ",max) # printing the largest number
