@@ -1,0 +1,44 @@
+# Q.1. Using input() function take one number from the user and using ternary operatorscheck whether the number is even or odd
+
+
+number = int(input("Enter a number: ")) # Take input from the user
+
+result = "Even" if number % 2 == 0 else "Odd" # Check if the number is even or odd using a ternary operator
+
+print(f"The number {number} is {result}.") # Print the result
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+# Q.2. Using input function take two number and then swap the number
+
+number1 = int(input("Enter the first number: "))  # input for number 1
+number2 = int(input("Enter the second number: "))  # input for number 2
+
+print(f"Before swapping: num1 = {num1}, num2 = {num2}")  # creating function for swapping numbers
+
+num1, num2 = num2, num1  # swapping integers
+
+print(f"After swapping: num1 = {num1}, num2 = {num2}")  # printing 
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+# Q.3. Write a Program to Convert Kilometers to Miles
+
+kilometers = float(input("Enter the distance in kilometers: "))  # input from user 
+
+conversion_factor = 0.621371  # conversion formula
+
+miles = kilometers * conversion_factor
+
+print(f"{kilometers} kilometers is equal to {miles:.2f} miles.")  # printing result 
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+# Q.4. Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+
+principal = float(input("Enter the principal amount (Rs): "))  # input for principal
+rate = float(input("Enter the annual interest rate (%): "))  # input for rate
+time = float(input("Enter the time (years): "))  # input for time period
+
+simple_interest = (principal * rate * time) / 100  # formula for simple interest
+
+print(f"The simple interest for Rs. {principal} at {rate}% per year for {time} years is Rs. {simple_interest:.2f}.")
+-------------------------------------------------------------------------------------------------------------------------------------------
