@@ -1,0 +1,72 @@
+# Q.1. Declare a div() function with two parameters. Then call the function and pass two numbers and display their division.
+
+# define the division function
+def div(a, b):
+    
+    if b == 0:  # check if the denominator is zero 
+        return "Division by zero is not allowed."
+    return a / b
+
+number1 = int(input("Enter number one : "))  # user input for no 1
+number2 = int(input("Enter number two : "))  # user input for no 2
+result = div(number1, number2)  # calling function
+print(f"The division of {number1} by {number2} is: {result}")  # print result
+
+###############################################################################################################################
+
+# Q.2. Declare a square() function with one parameter.Then call the function and pass one number and display the square of that number .
+
+# define the square function
+def square(number):
+    return num ** 2
+
+number = int(input("Enter number : "))  # input from user
+result = square(number)  # calling function 
+print(f"The square of {number} is: {result}")  # printing result
+
+###############################################################################################################################
+
+# Q.3. Using max() and min() functions display the maximum and minimum of 5 random numbers.
+
+# input 5 numbers from the user
+numbers = []
+print("Enter 5 numbers : ")
+for i in range(5):
+    num = float(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+
+# calculate the maximum and minimum
+maximum = max(numbers)
+minimum = min(numbers)
+
+# printing the results
+print(f"The maximum number is: {maximum}")
+print(f"The minimum number is: {minimum}")
+
+###############################################################################################################################
+
+# Q.4. Accept a name from the user and display that in lower case using lower() function
+
+name = input("Enter your name: ")  # input from user
+
+print(f"Your name in lowercase is: {name.lower()}")  # displaying in lower case
+
+###############################################################################################################################
+
+# Q.5. Write a lambda function that takes one argument and returns 'Positive' if the number is greater than 0, 'Negative' if it's less than 0, and 'Zero' if it's 0.
+ Test it with different numbers
+
+# creating lambda function
+check_number = lambda x: 'Positive' if x > 0 else 'Negative' if x < 0 else 'Zero'
+
+# input 5 numbers from the user
+numbers = []
+print("Enter 5 numbers : ")
+for i in range(5):
+    num = float(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+
+for num in numbers:
+    print(f"The number {num} is: {check_number(num)}")
+
+###############################################################################################################################
