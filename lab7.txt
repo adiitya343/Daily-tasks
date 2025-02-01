@@ -1,0 +1,68 @@
+# Q.1. Write a Python program to count the occurrences of each word
+
+# Take input from the user
+sentence = input("Enter a sentence: ").strip()
+
+# Convert the sentence to lowercase and split it into words
+words = sentence.lower().split()
+
+# Create a dictionary to store the word count
+word_count = {}
+
+# Iterate through the words and count occurrences
+for word in words:
+    word_count[word] = word_count.get(word, 0) + 1
+
+# Print the word count
+print("\nWord occurrences:")
+for word, count in word_count.items():
+    print(f"{word}: {count}")
+
+######################################################################################
+
+# Q.2. Write a Python program to remove a newline in Python String
+
+input_string = input("Enter a string with newlines: ").strip()  # input from user
+
+# Remove newlines using replace method
+output_string = input_string.replace("\n", "")
+
+# printing result
+print("\nString after removing newlines:")
+print(output_string)
+
+######################################################################################
+
+# Q.3. Write a Python program to reverse words in a string 
+
+input_string = input("Enter a string: ").strip()  # input from user
+
+# Split the string into words, reverse the list of words
+reversed_string = ' '.join(input_string.split()[::-1])
+
+# printing result
+print("\nString after reversing words:")
+print(reversed_string)
+
+######################################################################################
+
+# Q.4. Write a Python program to count and display the vowels of a given text
+
+def count_and_display_vowels(text):  # defining function to count vowels
+    vowels = "aeiouAEIOU"
+    vowel_count = {}
+    
+    for char in text:
+        if char in vowels:
+            vowel_count[char] = vowel_count.get(char, 0) + 1
+    
+    total_vowels = sum(vowel_count.values())
+    
+    print(f"Total vowels: {total_vowels}")
+    print("Vowel counts:")
+    for vowel, count in vowel_count.items():
+        print(f"{vowel}: {count}")
+
+ 
+input_text = input("Enter a text: ")  # input sentence
+count_and_display_vowels(input_text)  # displaying the count
