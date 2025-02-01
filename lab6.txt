@@ -1,0 +1,87 @@
+'''
+   *
+
+   **
+
+  ***
+
+ ****
+
+*****
+'''
+rows = int(input(" Enter number of rows : "))  # input from user for rows
+for i in range(1, rows + 1):  # outer loop
+    for j in range(rows - i):   # loop to print spaces
+        print(" ", end="")
+    for k in range(i):  
+        print("*", end="")  # printing star
+    print("\n")  # next line
+
+
+#############################################################################
+
+'''
+1
+
+10
+
+101
+
+1010
+
+10101
+'''
+rows = int(input("Enter number of rows : "))
+
+
+'''
+for i in range(1, rows + 1):  # outer loop for rows
+    for j in range(1, i + 1):  # inner loop for column
+        
+        if j % 2 != 0:  # checking column number to print alternate 1&0
+            print("1", end="")
+        else:
+            print("0", end="")
+    print()
+'''
+
+
+i = 1
+while i <= rows :
+    j = 1
+
+    while j <= i :
+        if j % 2 != 0 :
+            print("1", end="")
+        else :
+            print("0", end="")
+
+        j+=1
+
+    print("\n")
+    i+=1
+
+#############################################################################
+'''
+    1
+   10
+  101
+ 1010
+10101
+'''
+rows = int(input("Enter row no : "))  # input from user
+
+for i in range(1, rows + 1):  # outer loop 
+   
+    for j in range(rows - i):  # loop for printing spaces 
+        print(" ", end="")
+    
+   
+    for k in range(1, i + 1):  # checking column number to print alternate 1&0
+        if k % 2 != 0:
+            print("1", end="")
+        else:
+            print("0", end="")
+    
+    print() 
+#############################################################################
